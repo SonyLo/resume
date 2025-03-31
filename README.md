@@ -1,12 +1,8 @@
 # Fullstack-разработчик (Node.js, Vue, MySQL)
 
 
-<img src="https://drive.google.com/uc?export=view&id=1FdobuVEhrUqeYdPCjV-QZGmuJtwYh8g0" width="200">
-
-
 ## 📞 Контакты
-- 📱 tg: @lsvadm 
-- 🔗 GitHub: [github.com/SonyLo](https://github.com/SonyLo)
+- 📱 tg: [@lsvadm](https://t.me/lsvadm)
 
 
 ## 🛠 Навыки
