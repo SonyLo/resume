@@ -230,6 +230,73 @@ a:hover {
     color: var(--accent);
 }
 
+/* Стили для уровня разработчика */
+.level {
+    display: inline-block;
+    background-color: var(--accent);
+    color: var(--primary);
+    font-size: 0.7em;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    margin-left: 1rem;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+/* Стили для summary */
+.summary {
+    background-color: rgba(88, 166, 255, 0.05);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border: 1px solid var(--border);
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.summary p {
+    margin: 0;
+}
+
+/* Стили для soft skills */
+.soft-skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.soft-skill-item {
+    background-color: rgba(88, 166, 255, 0.05);
+    border-radius: 12px;
+    padding: 1.5rem;
+    border: 1px solid var(--border);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.soft-skill-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.soft-skill-item h3 {
+    margin-top: 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--border);
+    display: flex;
+    align-items: center;
+}
+
+.soft-skill-item h3 i {
+    margin-right: 0.5rem;
+    color: var(--accent);
+}
+
+.soft-skill-item p {
+    margin: 1rem 0 0 0;
+    line-height: 1.6;
+}
+
 @media (max-width: 768px) {
     body {
         padding: 1rem;
