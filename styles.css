@@ -334,3 +334,78 @@ a:hover {
         font-size: 1.2rem;
     }
 }
+
+/* Стили для печати */
+@media print {
+    body {
+        background-color: white;
+        color: black;
+        padding: 0;
+        margin: 0;
+        font-size: 12pt;
+    }
+
+    .container {
+        box-shadow: none;
+        border: none;
+        padding: 0;
+        max-width: 100%;
+        margin: 0;
+    }
+
+    h1, h2, h3 {
+        color: black;
+        page-break-after: avoid;
+    }
+
+    h1 {
+        border-bottom: 1px solid #ccc;
+    }
+
+    h2 {
+        border-left: 2px solid #ccc;
+    }
+
+    a {
+        color: black;
+        text-decoration: none;
+    }
+
+    .about-me, .skill-category, .experience-item, .achievements, .summary, .soft-skill-item {
+        break-inside: avoid;
+        page-break-inside: avoid;
+        border: 1px solid #eee;
+        background-color: white;
+        margin-bottom: 1em;
+    }
+
+    .skills, .soft-skills {
+        display: block;
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+
+    .skill-category, .soft-skill-item {
+        margin-bottom: 1em;
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+
+    .level {
+        background-color: #f0f0f0;
+        color: black;
+        border: 1px solid #ccc;
+    }
+
+    /* Убираем эффекты при наведении при печати */
+    .skill-category:hover, .experience-item:hover, .soft-skill-item:hover {
+        transform: none;
+        box-shadow: none;
+    }
+
+    /* Устанавливаем размер страницы и поля */
+    @page {
+        size: A4;
+        margin: 1cm;
+    }
+}
